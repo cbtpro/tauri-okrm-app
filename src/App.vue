@@ -8,7 +8,7 @@ import Greet from "./components/Greet.vue";
   <div class="container">
     <h1>Welcome to Tauri!</h1>
 
-    <div class="row">
+    <!-- <div class="row">
       <a href="https://vitejs.dev" target="_blank">
         <img src="/vite.svg" class="logo vite" alt="Vite logo" />
       </a>
@@ -18,11 +18,11 @@ import Greet from "./components/Greet.vue";
       <a href="https://vuejs.org/" target="_blank">
         <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
       </a>
-    </div>
+    </div> -->
 
-    <p>Click on the Tauri, Vite, and Vue logos to learn more.</p>
+    <!-- <p>Click on the Tauri, Vite, and Vue logos to learn more.</p> -->
 
-    <p>
+    <!-- <p>
       Recommended IDE setup:
       <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
       +
@@ -35,7 +35,7 @@ import Greet from "./components/Greet.vue";
       <a href="https://github.com/rust-lang/rust-analyzer" target="_blank"
         >rust-analyzer</a
       >
-    </p>
+    </p> -->
 
     <Greet />
   </div>

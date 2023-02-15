@@ -1,13 +1,18 @@
 <script setup>
 import { ref } from "vue";
 import { invoke } from "@tauri-apps/api/tauri";
+import { isTauri } from "../utils/shared";
 
 const greetMsg = ref("");
 const name = ref("");
 
 async function greet() {
   // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
-  greetMsg.value = await invoke("greet", { name: name.value });
+  if (isTauri) {
+    greetMsg.value = await invoke("greet", { name: name.value });
+  } else {
+    greetMsg.value = name;
+  }
 }
 </script>
 
